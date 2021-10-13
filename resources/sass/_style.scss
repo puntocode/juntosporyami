@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/font-juntos.woff");
+}
+
+body{
+    h2{font-family: $font-family-bebas; font-size: 3rem;}
+    p{font-size: 1.1rem;}
+}
+
+
+.nav-link{font-family: $font-family-bebas; font-size: 27px;}
+
+.cabecera{
+    .hero { padding-top: 6rem;
+        h1 { font-family: $font-family-bebas; font-size: 6rem;
+            .text-nos{ font-family: 'Gotham', sans-serif; color: #fff; font-size: 5.5rem; }
+        }
+    }
+}
+
+.cabecera-home{height: 45rem;}
+.cabecera-pages{height: 20rem;}
+
+.btn-white{ background-color: #fff !important;
+    &:hover{color: $yellow !important;}
+}
+
+.btn-what{background-color: #0A7E73; color: #fff;
+    &:hover{color: #fff;}
+}
+
+#contact{background-image: url("../images/love-bg.webp"); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #fff;}
+
+.color-yellow{color: $yellow }
+.hover-yellow{&:hover{color: #EBAB21; text-decoration: none;}}
+.bg-gray{background-color: $gray }
+.bg-yellow{background-color: $yellow }
+
+.heart { color: $yellow; -webkit-animation: hearthing 1s ease infinite; animation: hearthing 1s ease infinite; }
+@-webkit-keyframes hearthing {
+    0%   { -webkit-transform: scale(0.75); transform: scale(0.75); }
+    20%  { -webkit-transform: scale(0.85); transform: scale(0.85); }
+    40%  { -webkit-transform: scale(0.95); transform: scale(0.95); }
+    60%  { -webkit-transform: scale(1);    transform: scale(1);    }
+    80%  { -webkit-transform: scale(0.85); transform: scale(0.85); }
+    100% { -webkit-transform: scale(0.75); transform: scale(0.75); }
+}
+
+@keyframes hearthing {
+    0%   { -webkit-transform: scale(0.75); transform: scale(0.75); }
+    20%  { -webkit-transform: scale(0.85); transform: scale(0.85); }
+    40%  { -webkit-transform: scale(0.95); transform: scale(0.95); }
+    60%  { -webkit-transform: scale(1);    transform: scale(1);    }
+    80%  { -webkit-transform: scale(0.85); transform: scale(0.85); }
+    100% { -webkit-transform: scale(0.75); transform: scale(0.75); }
+}
